@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="100%" stop-color="#F5EFE6"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8C888"/>
+      <stop offset="50%" stop-color="#C29045"/>
+      <stop offset="100%" stop-color="#9A6B28"/>
+    </linearGradient>
+    <linearGradient id="terracottaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97757"/>
+      <stop offset="100%" stop-color="#A84C30"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="250" cy="250" r="236" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="4"/>
+  <circle cx="250" cy="250" r="222" fill="none" stroke="#2C1E18" stroke-opacity="0.15" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Botanical Emblem (Wheat + Coffee Branch) -->
+  <g transform="translate(250, 155) scale(0.95)">
+    <!-- Coffee Leaves & Berries -->
+    <path d="M-55,-10 C-45,-45 -10,-55 0,-50 C-15,-35 -20,-15 -25,0 Z" fill="#6A7B66" opacity="0.95"/>
+    <path d="M-25,0 C-10,-28 18,-35 32,-30 C18,-18 10,-5 5,12 Z" fill="#7D9178" opacity="0.9"/>
+    <path d="M-60,-22 C-50,-35 -30,-40 -20,-30 C-30,-22 -42,-18 -60,-22 Z" fill="#5A6B56"/>
+    <circle cx="-35" cy="-12" r="5" fill="url(#terracottaGrad)"/>
+    <circle cx="-16" cy="-28" r="4.5" fill="url(#terracottaGrad)"/>
+    <circle cx="-5" cy="-8" r="4" fill="url(#terracottaGrad)"/>
+
+    <!-- Wheat stalk -->
+    <path d="M-60,35 Q-10,32 55,-5" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+    <!-- Wheat grains -->
+    <path d="M-35,33 C-30,22 -18,24 -15,31 C-20,38 -30,40 -35,33 Z" fill="url(#goldGrad)"/>
+    <path d="M-18,29 C-12,18 0,20 2,28 C-3,34 -14,35 -18,29 Z" fill="url(#goldGrad)"/>
+    <path d="M-2,23 C4,12 16,14 18,21 C13,27 2,29 -2,23 Z" fill="url(#goldGrad)"/>
+    <path d="M14,16 C20,5 32,7 34,14 C29,20 18,22 14,16 Z" fill="url(#goldGrad)"/>
+    <path d="M30,8 C35,-2 46,0 48,6 C43,12 34,13 30,8 Z" fill="url(#goldGrad)"/>
+    <path d="M44,-1 C48,-10 57,-8 59,-2 C54,3 47,4 44,-1 Z" fill="url(#goldGrad)"/>
+    <!-- Little stars -->
+    <polygon points="-75,10 -72,16 -66,17 -70,22 -69,28 -75,25 -81,28 -80,22 -84,17 -78,16" fill="url(#goldGrad)" transform="scale(0.5) translate(-60, 10)"/>
+    <polygon points="120,-30 123,-24 129,-23 125,-18 126,-12 120,-15 114,-12 115,-18 111,-23 117,-24" fill="url(#goldGrad)" transform="scale(0.5) translate(100, -20)"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="250" y="278" font-family="'Playfair Display', Georgia, serif" font-size="44" font-weight="700" fill="#2C1E18" text-anchor="middle" letter-spacing="2">
+    MILO’S CAFE
+  </text>
+
+  <!-- Tagline Banner -->
+  <text x="250" y="310" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#A84C30" text-anchor="middle" letter-spacing="4">
+    EUROPEAN CAFE &amp; SCRATCH BAKERY
+  </text>
+
+  <!-- Divider line with diamond -->
+  <line x1="160" y1="334" x2="225" y2="334" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  <polygon points="250,330 254,334 250,338 246,334" fill="url(#goldGrad)"/>
+  <line x1="275" y1="334" x2="340" y2="334" stroke="url(#goldGrad)" stroke-width="1.5"/>
+
+  <!-- Heritage & Location -->
+  <text x="250" y="362" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="#2C1E18" text-anchor="middle" letter-spacing="2.5">
+    COLOMBIAN ROOTS • MORRISVILLE, NC
+  </text>
+  <text x="250" y="386" font-family="'Playfair Display', Georgia, serif" font-size="12" font-style="italic" fill="#756254" text-anchor="middle">
+    Handcrafted Focaccia &amp; Specialty Coffee
+  </text>
+</svg>

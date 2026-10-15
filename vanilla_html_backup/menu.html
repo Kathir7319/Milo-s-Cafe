@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — Crafted from Scratch | Milo’s Cafe Morrisville, NC</title>
+  <meta name="description" content="Explore Milo's Cafe menu: award-winning scratch focaccia sandwiches, table-side torched chicken schnitzel, authentic sweet crepes, and specialty coffee drinks.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <span class="badge-trophy">🏆 The News &amp; Observer</span>
+    Voted the <strong>"Best Sandwich Shop in the Triangle"</strong> • Scratch Focaccia Baked Fresh Daily
+  </aside>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="Milo's Cafe Home">
+        <img src="images/logo.jpg" alt="Milo's Cafe Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">Milo’s Cafe</span>
+          <span class="brand-tagline">European Cafe &amp; Bakery</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Location &amp; Hours</a>
+      </nav>
+
+      <!-- Desktop Header Actions -->
+      <div class="header-actions">
+        <span class="status-pill open live-cafe-status"><span class="status-dot"></span> Checking Hours...</span>
+        <a href="tel:+19194438000" class="btn btn-primary btn-sm">Order by Phone</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+      <span class="status-pill open live-cafe-status"><span class="status-dot"></span> Open Today</span>
+      <span style="font-size: 0.8125rem; color: var(--color-text-muted); font-weight: 600;">Morrisville, NC</span>
+    </div>
+    <nav style="display: flex; flex-direction: column;">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="menu.html" class="nav-link active">Menu Highlights</a>
+      <a href="gallery.html" class="nav-link">Photo Gallery</a>
+      <a href="contact.html" class="nav-link">Location, Hours &amp; Contact</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="tel:+19194438000" class="btn btn-primary" style="width: 100%;">Call +1 919-443-8000</a>
+      <a href="contact.html" class="btn btn-outline" style="width: 100%;">Get Directions</a>
+      <p style="font-size: 0.85rem; color: var(--color-text-muted); text-align: center;">
+        📍 10119 Chapel Hill Rd, Morrisville, NC
+      </p>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Menu</span>
+        </div>
+        <h1 class="page-hero-title">Crafted from Scratch</h1>
+        <p class="page-hero-sub">
+          Served on our signature house-baked focaccia bread, hand-pulled espresso, and scratch-made sweet &amp; savory crepes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Table-Side Torching Spotlight Banner -->
+    <section style="background: #241610; color: #FFFFFF; padding: 24px 0; border-bottom: 2px solid var(--color-gold);">
+      <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 16px; text-align: center; flex-wrap: wrap;">
+        <span style="font-size: 1.5rem;">🔥</span>
+        <span style="font-size: 1rem; font-weight: 600; color: var(--color-sand);">
+          Signature Experience: Melted Gruyère cheese is <strong>torched table-side</strong> over our famous schnitzel sandwich!
+        </span>
+        <span class="card-badge card-badge-award" style="font-size: 0.72rem;">Triangle Favorite</span>
+      </div>
+    </section>
+
+    <!-- Menu Sections Container -->
+    <section class="section-padding" style="background: var(--color-white);">
+      <div class="container">
+
+        <!-- Category 1: Award-Winning Sandwiches -->
+        <div class="menu-category-section" id="sandwiches">
+          <div class="category-header-wrap">
+            <span class="category-icon">🏆</span>
+            <div>
+              <h2 class="category-title">Award-Winning Sandwiches</h2>
+              <div style="font-size: 0.95rem; color: var(--color-gold-dark); font-weight: 600; margin-top: 4px;">
+                Served on our signature house-baked focaccia bread.
+              </div>
+            </div>
+            <span class="category-subtext">Baked Fresh Daily</span>
+          </div>
+
+          <div class="menu-list-grid">
+            <!-- 1. The Famous Schnitzel Sandwich -->
+            <article class="menu-horizontal-card">
+              <img src="images/schnitzel-sandwich.jpg" alt="The Famous Schnitzel Sandwich" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    The Famous Schnitzel Sandwich
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-award">🏆 Triangle's Best</span>
+                  <span class="dietary-tag" style="background: #FFF3E0; color: #E65100;">🔥 Torched Table-Side</span>
+                  <span class="dietary-tag tag-scratch">House Focaccia</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Crispy golden chicken cutlet, melted gruyère cheese torched table-side right before your eyes, crunchy yuzu slaw, and signature house spicy mayo on warm scratch-made focaccia.
+                </p>
+              </div>
+            </article>
+
+            <!-- 2. The Caprese Twist -->
+            <article class="menu-horizontal-card">
+              <img src="images/caprese-twist.jpg" alt="The Caprese Twist Sandwich" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    The Caprese Twist
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-veg">🌱 Vegetarian</span>
+                  <span class="dietary-tag tag-scratch">House Focaccia</span>
+                  <span class="dietary-tag tag-signature">Signature Glaze</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Fresh whole-milk mozzarella, ripe farm tomatoes, fragrant nut-free basil pesto, and a rich handcrafted balsamic reduction glaze on warm rosemary focaccia.
+                </p>
+              </div>
+            </article>
+
+            <!-- 3. Mortadella & Pistachio Focaccia -->
+            <article class="menu-horizontal-card">
+              <img src="images/mortadella-focaccia.jpg" alt="Artisan Mortadella Focaccia" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    Mortadella &amp; Pistachio Focaccia
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-scratch">House Focaccia</span>
+                  <span class="dietary-tag tag-signature">Italian Deli</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Silky Italian mortadella ribbons, creamy stracciatella cheese, crushed roasted pistachios, and a drizzle of hot honey on daily scratch focaccia.
+                </p>
+              </div>
+            </article>
+
+            <!-- 4. Smoked Salmon Focaccia -->
+            <article class="menu-horizontal-card">
+              <img src="images/salmon-focaccia.jpg" alt="Smoked Salmon Focaccia" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    Smoked Salmon &amp; Caper Focaccia
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-scratch">House Focaccia</span>
+                  <span class="dietary-tag tag-signature">Chef's Selection</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Premium cold-smoked Atlantic salmon, herbed whipped cream cheese, pickled red onions, fresh dill, and baby capers on warm focaccia bread.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Category 2: Crepes & Bakery -->
+        <div class="menu-category-section" id="crepes" style="margin-top: 48px;">
+          <div class="category-header-wrap">
+            <span class="category-icon">🥞</span>
+            <div>
+              <h2 class="category-title">Crepes &amp; Bakery</h2>
+              <div style="font-size: 0.95rem; color: var(--color-gold-dark); font-weight: 600; margin-top: 4px;">
+                Hand-spun crepes and scratch morning bakes.
+              </div>
+            </div>
+            <span class="category-subtext">Sweet &amp; Savory</span>
+          </div>
+
+          <div class="menu-list-grid">
+            <!-- 1. Authentic Sweet Crepes -->
+            <article class="menu-horizontal-card">
+              <img src="images/authentic-crepes.jpg" alt="Authentic Sweet Crepes with Fresh Berries" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    Authentic Sweet Crepes
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-veg">🌱 Vegetarian</span>
+                  <span class="dietary-tag tag-signature">Classic French</span>
+                  <span class="dietary-tag tag-scratch">Scratch Sauces</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Delicate French-style crepes drizzled with house-made sauces (Nutella, Belgian dark chocolate, or salted caramel), fresh strawberries, blueberries, and fluffy whipped cream.
+                </p>
+              </div>
+            </article>
+
+            <!-- 2. House Pastries & Croissants -->
+            <article class="menu-horizontal-card">
+              <img src="images/house-pastry.jpg" alt="House Scratch-Made Pastries and Croissants" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    House Pastries
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-scratch">Baked Fresh Daily</span>
+                  <span class="dietary-tag tag-signature">Rotating Selection</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  A daily rotating selection of scratch-made pastries, golden flaky butter croissants, pain au chocolat, ham-egg-and-cheese croissants, and seasonal fruit Danishes.
+                </p>
+              </div>
+            </article>
+
+            <!-- 3. Savory Chicken & Brie Crepe -->
+            <article class="menu-horizontal-card">
+              <img src="images/truffle-crepe.jpg" alt="Gourmet Savory Crepe" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    Chicken, Melted Brie &amp; Truffle Crepe
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-signature">Gourmet Savory</span>
+                  <span class="dietary-tag tag-scratch">House Bechamel</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Warm crepe filled with roasted tender chicken breast, melted French brie, sautéed cremini mushrooms, and a delicate white truffle essence drizzle.
+                </p>
+              </div>
+            </article>
+
+            <!-- 4. Artisan Avocado & Soft Egg Sourdough Toast -->
+            <article class="menu-horizontal-card">
+              <img src="images/avocado-toast.jpg" alt="Artisan Avocado Toast" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    Artisan Avocado Toast
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-veg">🌱 Vegetarian</span>
+                  <span class="dietary-tag tag-signature">Breakfast Favorite</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Smashed Hass avocado on thick-cut toasted sourdough, organic soft-boiled egg, Aleppo chili flakes, microgreens, and a bright drizzle of lemon-infused olive oil.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Category 3: Specialty Drinks -->
+        <div class="menu-category-section" id="coffee" style="margin-top: 48px;">
+          <div class="category-header-wrap">
+            <span class="category-icon">☕</span>
+            <div>
+              <h2 class="category-title">Specialty Drinks</h2>
+              <div style="font-size: 0.95rem; color: var(--color-gold-dark); font-weight: 600; margin-top: 4px;">
+                Single-origin Colombian beans &amp; handcrafted house syrups.
+              </div>
+            </div>
+            <span class="category-subtext">Hot &amp; Iced</span>
+          </div>
+
+          <div class="menu-list-grid">
+            <!-- 1. Classic Espresso -->
+            <article class="menu-horizontal-card">
+              <img src="images/classic-espresso.jpg" alt="Classic Espresso and Latte" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    Classic Espresso
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-signature">Colombian Single-Origin</span>
+                  <span class="dietary-tag tag-scratch">Perfect Extraction</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Perfect balance of bold Colombian character and silky steamed whole milk or oat milk. Available as double espresso, macchiato, flat white, cappuccino, or classic latte.
+                </p>
+              </div>
+            </article>
+
+            <!-- 2. Signature Seasonal Lattes -->
+            <article class="menu-horizontal-card">
+              <img src="images/seasonal-latte.jpg" alt="Handcrafted Seasonal Latte" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    Signature Seasonal Lattes
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-award">House-Made Syrups</span>
+                  <span class="dietary-tag tag-signature">Fan Favorite</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Handcrafted syrups made in-house to match the flavors of the season—including our beloved Horchata Brown Sugar Latte, Gingerbread Maple, Banana Dulce de Leche, and Lavender Honey.
+                </p>
+              </div>
+            </article>
+
+            <!-- 3. European Cortado -->
+            <article class="menu-horizontal-card">
+              <img src="images/cortado.jpg" alt="Cortado Coffee" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    European Cortado
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-signature">Equal Ratio</span>
+                  <span class="dietary-tag tag-scratch">Pure Velvet</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Equal parts bold Colombian double espresso cut with warm, silky textured steamed milk in a traditional glass tumbler.
+                </p>
+              </div>
+            </article>
+
+            <!-- 4. London Fog & Specialty Iced Tea / Matcha -->
+            <article class="menu-horizontal-card">
+              <img src="images/specialty-drink.jpg" alt="London Fog and Specialty Cold Brew" class="menu-horizontal-img">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                  <h3 style="font-size: 1.35rem; font-family: var(--font-serif); color: var(--color-espresso-900);">
+                    London Fog &amp; Iced Matcha Latte
+                  </h3>
+                </div>
+                <div style="margin-bottom: 8px;">
+                  <span class="dietary-tag tag-signature">Ceremonial Grade</span>
+                  <span class="dietary-tag tag-scratch">House Vanilla</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Fragrant Earl Grey steeped with house-made Madagascar vanilla syrup and microfoam; or ceremonial Japanese matcha whisked with oat milk over ice.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Dietary & Allergy Note -->
+        <div style="background: var(--color-sand); padding: 28px; border-radius: var(--radius-lg); margin-top: 56px; border: 1px solid var(--color-border); text-align: center;">
+          <h4 style="font-size: 1.15rem; margin-bottom: 8px;">Dietary &amp; Scratch Kitchen Notice</h4>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted); max-width: 780px; margin: 0 auto;">
+            Our pesto is crafted completely <strong>nut-free</strong>. Dairy-free milk substitutions (Oat, Almond) and vegetarian selections are always readily available. Please inform our baristas and kitchen staff of any allergies when ordering.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer (Every Page) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand">
+          <img src="images/logo.jpg" alt="Milo's Cafe Logo" class="brand-logo-img">
+          <div class="brand-name">Milo’s Cafe</div>
+          <div class="brand-tagline">European Cafe &amp; Scratch Bakery</div>
+          <p class="footer-about-text">
+            Where Colombian roots meet European cafe culture. Scratch-baked daily focaccia, specialty coffee, and authentic sweet &amp; savory crepes crafted with love in Morrisville, NC.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com/milos_europeancafe" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://maps.google.com/?q=10119+Chapel+Hill+Rd,+Morrisville,+NC+27560" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Google Maps">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </a>
+            <a href="tel:+19194438000" class="social-btn" aria-label="Phone">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="menu.html">Craft Menu</a></li>
+            <li><a href="gallery.html">The Vibe &amp; Photos</a></li>
+            <li><a href="contact.html">Location &amp; Directions</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Hours of Operation -->
+        <div>
+          <h4 class="footer-col-title">Hours</h4>
+          <div class="footer-hours-list">
+            <div class="footer-hours-row">
+              <span>Mon – Thu</span>
+              <strong>7:00 AM – 4:00 PM</strong>
+            </div>
+            <div class="footer-hours-row">
+              <span>Fri – Sat</span>
+              <strong>7:00 AM – 5:00 PM</strong>
+            </div>
+            <div class="footer-hours-row">
+              <span>Sunday</span>
+              <strong>8:30 AM – 3:30 PM</strong>
+            </div>
+          </div>
+          <div style="margin-top: 16px;">
+            <span class="status-pill open live-cafe-status"><span class="status-dot"></span> Open Today</span>
+          </div>
+        </div>
+
+        <!-- Col 4: Location & Contact -->
+        <div>
+          <h4 class="footer-col-title">Visit Us</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon">📍</span>
+              <div>
+                <strong>10119 Chapel Hill Rd</strong><br>
+                Morrisville, NC 27560
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon">📞</span>
+              <div>
+                <a href="tel:+19194438000" style="color: #FFFFFF; font-weight: 700;">+1 919-443-8000</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon">📸</span>
+              <div>
+                <a href="https://instagram.com/milos_europeancafe" target="_blank" rel="noopener noreferrer" style="color: var(--color-gold);">
+                  @milos_europeancafe
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; <span id="currentYear">2026</span> Milo’s Cafe. All rights reserved. Voted "Best Sandwich Shop in the Triangle".
+        </div>
+        <div>
+          Crafted with love in Morrisville, North Carolina
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Action Bar -->
+  <aside class="mobile-bottom-bar" aria-label="Quick Actions">
+    <div class="mobile-bottom-nav">
+      <a href="tel:+19194438000" class="mobile-bottom-btn">
+        <span class="btn-icon">📞</span>
+        <span>Call</span>
+      </a>
+      <a href="contact.html" class="mobile-bottom-btn">
+        <span class="btn-icon">📍</span>
+        <span>Directions</span>
+      </a>
+      <a href="menu.html" class="mobile-bottom-btn active">
+        <span class="btn-icon">📋</span>
+        <span>Menu</span>
+      </a>
+      <a href="https://instagram.com/milos_europeancafe" target="_blank" rel="noopener noreferrer" class="mobile-bottom-btn">
+        <span class="btn-icon">📸</span>
+        <span>Instagram</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
